@@ -22,7 +22,7 @@
     "history"
   ],
   "author": "imrany",
-  "license": "BSD-2-Clause",
+  "license": "MPL-2.0",
   "devDependencies": {
     "@types/chrome": "^0.0.266",
     "typescript": "^5.4.5",

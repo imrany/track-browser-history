@@ -20,7 +20,7 @@
     "health"
   ],
   "author": "imrany",
-  "license": "BSD-2-Clause",
+  "license": "MPL-2.0",
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
