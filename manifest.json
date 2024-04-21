@@ -1,0 +1,21 @@
+
+{
+  "manifest_version": 3,
+  "name": "My History Tracker",
+  "description": "Tracks browsing history",
+  "version": "0.1.0",
+  "author":"imrany",
+  "permissions": ["history","favicon"],
+  "chrome_url_overrides":{
+    "history":"popup.html"
+   },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.ico"
+  },
+  "icons": {
+    "16": "icon.ico",
+    "48": "icon.ico",
+    "128": "icon.ico"
+  }
+}
