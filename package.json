@@ -1,0 +1,31 @@
+{
+  "name": "track_browser_history",
+  "version": "0.1.0",
+  "description": "track browser history",
+  "main": "build/index.js",
+  "engineStrict": true,
+  "engines": {
+    "node": ""
+  },
+  "scripts": {
+    "dev":"make&&npx tsc --watch",
+    "build": "make",
+    "clean":"npx rimraf build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "imrany"
+  },
+  "keywords": [
+    "track",
+    "history"
+  ],
+  "author": "imrany",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.0.266",
+    "typescript": "^5.4.5",
+    "rimraf": "^5.0.5"
+  }
+}

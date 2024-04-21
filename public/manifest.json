@@ -7,10 +7,10 @@
   "author":"imrany",
   "permissions": ["history","favicon"],
   "chrome_url_overrides":{
-    "history":"popup.html"
+    "history":"index.html"
    },
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "index.html",
     "default_icon": "icon.ico"
   },
   "icons": {
