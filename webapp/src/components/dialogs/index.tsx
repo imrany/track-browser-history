@@ -1,5 +1,5 @@
 import { MdClose } from "react-icons/md";
-import { Content } from "../types/definitions";
+import {  } from "../../types";
 
 type Props={
     data:{

@@ -1,10 +1,5 @@
-type Props={
-    data:{
-        backgroundImage:string,
-    }
-}
 
-export default function LandingPage(props:Props){
+export default function LandingPage(){
     return(
         <div>
             <p>Landing page</p>
