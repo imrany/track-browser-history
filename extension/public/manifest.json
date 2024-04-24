@@ -5,17 +5,16 @@
   "description": "Tracks browsing history",
   "version": "0.1.0",
   "author":"imrany",
-  "permissions": ["history","favicon"],
+  "permissions": ["history","favicon","webRequestBlocking"],
   "chrome_url_overrides":{
     "history":"index.html"
-   },
+  }, 
   "action": {
     "default_popup": "index.html",
-    "default_icon": "icon.ico"
-  },
-  "icons": {
-    "16": "icon.ico",
-    "48": "icon.ico",
-    "128": "icon.ico"
+    "default_icon": {
+      "16": "icon.ico",
+      "48": "icon.ico",
+      "128": "icon.ico"
+    }
   }
 }
