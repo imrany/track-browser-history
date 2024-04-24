@@ -5,8 +5,9 @@ export default function websocket(io:any){
         var clientIp = socket.request.connection.remoteAddress;
         console.log(`a user connected: ${socket.id}, ClientIP : ${clientIp} `);
 
-        socket.on("update", (update:string, err:any) => {
-            io.emit("response",update)
+        socket.on("hello", (data:string, err:any) => {
+            io.emit("hello",data)
+            console.log(data)
             if(err){
                 console.log(err)
             }
