@@ -1,33 +1,3 @@
-const socket=new WebSocket("ws://localhost:8000");
-socket.onopen=(event:any)=>{
-    console.log("WebSocket connected");
-    socket.send("Hello, websocket");
-}
-
-socket.onmessage = (event:any)=>{
-    let message=event.data;
-    
-    // Check if the message is a Blob
-    if (message instanceof Blob) {
-        var reader = new FileReader();
-        reader.onload = ()=>{
-            let text = reader.result;
-            console.log(text)
-        };
-        reader.readAsText(message);
-    } else {
-        // If the message is not a Blob, treat it as a string
-        console.log(message)
-    }
-};
-
-socket.onclose = (event:any)=>{
-  console.log('WebSocket closed.');
-};
-
-socket.onerror = (error:any)=>{
-  console.error('WebSocket error:', error);
-};
 
 function onAnchorClick(event:any) {
   chrome.tabs.create({
