@@ -5,10 +5,13 @@
   "description": "Tracks browsing history",
   "version": "0.1.0",
   "author":"imrany",
-  "permissions": ["history","favicon","webRequestBlocking"],
+  "permissions": ["history","background","favicon"],
   "chrome_url_overrides":{
     "history":"index.html"
-  }, 
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "index.html",
     "default_icon": {
